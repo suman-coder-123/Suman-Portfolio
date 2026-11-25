@@ -1,0 +1,11 @@
+# Suman Patidar — Portfolio
+# Replace the sitemap URL below with your live domain before submitting to Google.
+
+User-agent: *
+Allow: /
+
+# Optional: block common unwanted crawlers (uncomment if desired)
+# User-agent: AhrefsBot
+# Disallow: /
+
+Sitemap: https://sumanpatidar.com/sitemap.xml

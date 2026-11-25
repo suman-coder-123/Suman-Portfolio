@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FAFAF7" />
+    <meta name="author" content="Suman Patidar" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <script>
+      // Apply the saved (or system) theme before first paint to avoid a flash.
+      (function () {
+        try {
+          var stored = localStorage.getItem('suman-portfolio-theme')
+          var dark =
+            stored === 'dark' ||
+            (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)
+          document.documentElement.classList.toggle('dark', dark)
+          document.documentElement.style.colorScheme = dark ? 'dark' : 'light'
+        } catch (error) {
+          /* localStorage may be unavailable — fall back to the light theme. */
+        }
+      })()
+    </script>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <title>Suman Patidar | Full Stack Developer, Java Trainer &amp; Freelance Web Developer</title>
+
+    <style>
+      html {
+        background: #fafaf7;
+      }
+      html.dark {
+        background: #0a0f18;
+      }
+      body {
+        margin: 0;
+      }
+      #boot {
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        color: #0a0f1a;
+      }
+      html.dark #boot {
+        color: #f4f7fc;
+      }
+      #boot span {
+        width: 26px;
+        height: 26px;
+        border: 2px solid rgba(10, 15, 26, 0.12);
+        border-top-color: #2563eb;
+        border-radius: 999px;
+        animation: boot-spin 0.8s linear infinite;
+      }
+      html.dark #boot span {
+        border-color: rgba(255, 255, 255, 0.14);
+        border-top-color: #60a5fa;
+      }
+      @keyframes boot-spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #boot span {
+          animation: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div id="boot" aria-label="Loading portfolio"><span></span></div>
+    </div>
+    <noscript>
+      <div style="padding: 48px 24px; font-family: ui-sans-serif, system-ui, sans-serif; max-width: 640px; margin: 0 auto;">
+        <h1 style="font-size: 28px; margin-bottom: 12px;">Suman Patidar — Full Stack Developer &amp; Technical Trainer</h1>
+        <p style="line-height: 1.7; color: #374151;">
+          This portfolio requires JavaScript to display. Please enable JavaScript, or reach out directly:
+          <a href="https://linkedin.com/in/suman-patidar-415b03348/" style="color: #2563eb;">LinkedIn</a> ·
+          <a href="https://github.com/suman-coder-123" style="color: #2563eb;">GitHub</a>
+        </p>
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

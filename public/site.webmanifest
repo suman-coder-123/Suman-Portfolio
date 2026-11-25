@@ -1,0 +1,18 @@
+{
+  "name": "Suman Patidar — Full Stack Developer & Technical Trainer",
+  "short_name": "Suman Patidar",
+  "description": "Portfolio of Suman Patidar — Full Stack Developer, Technical Trainer, and Freelance Digital Partner.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FAFAF7",
+  "theme_color": "#0B1B33",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
