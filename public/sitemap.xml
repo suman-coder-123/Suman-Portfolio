@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://sumanpatidar.com/</loc>
+    <loc>https://sumanpatidar.vercel.app/</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -10,5 +10,5 @@
       <image:loc>https://sumanpatidar.com/og-image.png</image:loc>
       <image:title>Suman Patidar — Full Stack Developer, Technical Trainer &amp; Freelance Digital Partner</image:title>
     </image:image>
-  </url>
+  </url>  
 </urlset>
